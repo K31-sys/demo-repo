@@ -5,7 +5,7 @@
         "type": "kitty-direct",
         "source": "~/.config/fastfetch/rempng.png",
         "padding": {
-            "top": 1
+            "top": 2
         }
     },
     "display": {
@@ -17,57 +17,64 @@
             "type": "custom"
         },
         {
-            "key": "│ {#31} user    {#keys}│",
+            "key": "│ {#31} User    {#keys}│",
             "type": "title",
             "format": "{user-name}"
         },
         {
-            "key": "│ {#32}󰇅 host    {#keys}│",
+            "key": "│ {#32}󰇅 Host    {#keys}│",
             "type": "title",
             "format": "{host-name}"
         },
         {
-            "key": "│ {#33}󰅐 uptime  {#keys}│",
+            "key": "│ {#33}󰅐 Uptime  {#keys}│",
             "type": "uptime"
         },
         {
-            "key": "│ {#34}{icon} distro  {#keys}│",
+            "key": "│ {#34}{icon} Distro  {#keys}│",
             "type": "os"
         },
         {
-            "key": "│ {#35} kernel  {#keys}│",
+            "key": "│ {#35} Kernel  {#keys}│",
             "type": "kernel"
         },
         {
-            "key": "│ {#36}󰇄 desktop {#keys}│",
+            "key": "│ {#37}󰩟 Bios    {#keys}│",
+            "type": "bios",
+        },
+        {
+            "key": "│ {#36}󰇄 Desktop {#keys}│",
             "type": "de"
         },
         {
-            "key": "│ {#31} term    {#keys}│",
+            "key": "│ {#31} Term    {#keys}│",
             "type": "terminal"
         },
         {
-            "key": "│ {#32} shell   {#keys}│",
+            "key": "│ {#32} Shell   {#keys}│",
             "type": "shell"
         },
         {
-            "key": "│ {#33}󰍛 cpu     {#keys}│",
+            "key": "│ {#33}󰍛 Cpu     {#keys}│",
             "type": "cpu",
             "showPeCoreCount": true
         },
+                {
+            "key": "│ {#34} Gpu     {#keys}│",
+            "type": "gpu",
+        },
         {
-            "key": "│ {#34}󰉉 disk    {#keys}│",
+            "key": "│ {#35}󰉉 Disk    {#keys}│",
             "type": "disk",
             "folders": "/"
         },
         {
-            "key": "│ {#35} memory  {#keys}│",
+            "key": "│ {#36} Memory  {#keys}│",
             "type": "memory"
         },
         {
-            "key": "│ {#36}󰩟 sound   {#keys}│",
-            "type": "sound",
-            // "format": "{ipv4} ({ifname})"
+            "key": "│ {#37}󰏗 Package {#keys}│",
+            "type": "packages",
         },
         {
             "key": "├───────────┤",
