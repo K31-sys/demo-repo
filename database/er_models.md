@@ -125,3 +125,50 @@ Participation Constraint is applied to the entity participating in the relations
 3. Attach attributes to the entities properly.
 4. Remove redundant entities and relationships.
 5. Add proper colors to highlight the data present in the database.
+<br>
+
+# Enhanced ER Models
+--------------------
+
+# What is Enhanced ER Models?
+Enhanced ERDs are high-level models that represent the requirements and complexities of complex databases. The EER model includes all modeling concepts of the ER model. In addition, EER includes the following concepts.
+
+- Subclasses and Superclasses
+- Specialization and Generalization
+- Category or Union type
+- Attribute and relationship inheritance
+
+# Generalization and Specialization
+These are very common relationships found in real entities. However, this kind of relationship was added later as an enhanced extension to the classical ER model. Specialized classes are often called subclass while a generalized class is called a superclass, probably inspired by object-oriented programming. A sub-class is best understood by “IS-A analysis”. The following statements hopefully make some sense to your mind “Technician IS-A Employee”, and “Laptop IS-A Computer”. 
+
+An entity is a specialized type/class of another entity. For example, a Technician is a special Employee in a university system Faculty is a special class of Employees. We call this phenomenon generalization/specialization. In the example here Employee is a generalized entity class while the Technician and Faculty are specialized classes of Employee. 
+
+Example:
+This example instance of “sub-class” relationships. Here we have four sets of employees: Secretary, Technician, and Engineer. The employee is a super-class of the rest three sets of individual sub-class is a subset of Employee set.
+
+# Constraints
+There are two types of constraints on the “Sub-class” relationship.  
+
+- Total or Partial – A sub-classing relationship is total if every super-class entity is to be associated with some sub-class entity, otherwise partial. Sub-class “job type based employee category” is partial sub-classing – not necessary every employee is one of (secretary, engineer, and technician), i.e. union of these three types is a proper subset of all employees. Whereas other sub-classing “Salaried Employee AND Hourly Employee” is total; the union of entities from sub-classes is equal to the total employee set, i.e. every employee necessarily has to be one of them.
+<br>
+
+- Overlapped or Disjoint – If an entity from a super-set can be related (can occur) in multiple sub-class sets, then it is overlapped sub-classing, otherwise disjoint. Both the examples: job-type based and salaries/hourly employee sub-classing are disjoint.
+
+> `Note – These constraints are independent of each other: can be “overlapped and total or partial” or “disjoint and total or partial”. Also, sub-classing has transitive properties.`
+
+# Multiple Inheritance (sub-class of multiple superclasses)
+An entity can be a sub-class of multiple entity types such entities are sub-class of multiple entities and have multiple super-classes. In multiple inheritances, attributes of sub-class are the union of attributes of all super-classes. 
+
+Example
+Teaching Assistant can subclass of Employee and Student both. A faculty in a university system can be a subclass of Employee and Alumnus.
+
+# Union
+Set of Library Members is UNION of Faculty, Student, and Staff. A union relationship indicates either type; for example, a library member is either Faculty or Staff or Student.
+Below are two examples that show how UNION can be depicted in ERD – Vehicle Owner is UNION of PERSON and Company, and RTO Registered Vehicle is UNION of Car and Truck.
+
+> `There might be some confusion in Sub-class and UNION.`
+
+- Consider an example in above figure Vehicle is super-class of CAR and Truck. This is the correct example of the subclass as well but here it is used differently that we are saying RTO Registered vehicle is UNION of Car and Vehicle, they do not inherit any attribute of Vehicle, attributes of car and truck are altogether independent set, where is in sub-classing situation car and truck would be inheriting the attribute of vehicle class. 
+<br>
+
+- An Enhanced Entity-Relationship (EER) model is an extension of the original Entity-Relationship (ER) model that includes additional concepts and features to support more complex data model requirements. The EER model includes all the elements of the ER model and adds new constructs, such as subtypes and supertypes, generalization and specialization, and inheritance.
